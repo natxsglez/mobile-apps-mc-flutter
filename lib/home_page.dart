@@ -30,20 +30,19 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(title: const Text('Mc Flutter')),
         body: Container(
           child: Column(children: [
-            Padding(
-                padding: EdgeInsets.only(left: 45, top: 10, right: 35),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.account_circle,
-                      size: 60,
-                    ),
-                    Column(children: [
-                      _addText(22, "Flutter McFlutter"),
-                      _addText(16, "Experienced App Developer")
-                    ])
-                  ],
-                )),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.account_circle,
+                  size: 60,
+                ),
+                Column(children: [
+                  _addText(22, "Flutter McFlutter"),
+                  _addText(16, "Experienced App Developer")
+                ])
+              ],
+            ),
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
               Padding(
                   padding: EdgeInsets.only(left: 15, top: 7, bottom: 7),
